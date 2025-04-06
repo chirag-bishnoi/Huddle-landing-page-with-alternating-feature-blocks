@@ -1,0 +1,40 @@
+.cta {
+    margin-top: 5rem;
+}
+.cta__card {
+    background-color: var(--clr-white);
+    border-radius: 15px;
+    box-shadow: 0 -1px 15px -5px var(--clr-200);
+    max-width: 500px;
+    margin-inline: auto;
+    margin-bottom: -2rem;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    position: relative;
+}
+.cta__title {
+    font-size: var(--fs-l);
+    text-align: center;
+}
+
+.cta__btn {
+    display: block;
+    margin-inline: auto;
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    box-shadow: 0 5px 10px -4px var(--clr-200);
+}
+
+@media (min-width:1040px) {
+    .cta__title {
+        font-size: var(--fs-xl);
+        margin-top: 0.7rem;
+    }
+    .cta__btn {
+        font-size: var(--fs-sm);
+        margin-top: 1.4rem;
+        padding-inline: 4rem;
+        padding-block: 1rem;
+    }
+}

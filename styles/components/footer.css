@@ -1,0 +1,143 @@
+footer {
+    background-color: var(--clr-300);
+    color: var(--clr-white);
+}
+
+footer img {
+    display: inline-block;
+}
+
+.footer-inner {
+    padding-top: 6rem;
+}
+
+.footer__logo {
+    transform: scale(0.8);
+    transform-origin: top left;
+}
+
+
+/*grid colmns*/
+
+.footer__items li {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+.address img {
+    max-width: 13px;
+    max-height: 18px;
+}
+
+.footer__logo-icon  {
+    fill: white;
+}
+
+/*social media icons*/
+
+.footer__icons > li {
+    display: flex;
+    gap: 1rem;
+    margin-inline:auto;
+    margin-block: 4rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icons a {
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.footer__icons a:hover {
+    border: 1px solid var( --clr-pink);
+
+}
+
+.footer__icons a:hover .icon {
+    fill: var(--clr-pink);
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.items-2 {
+    margin-top: 4rem;
+}
+
+/*copyright text*/
+.copyright {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/*Media Querry*/
+.items-1{grid-area: A;}
+.items-2{grid-area: B;}
+.items-3{grid-area: C;}
+.items-4{grid-area: D;}
+
+@media (min-width:750px) {
+    .footer__content {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+         "A B"
+         "A C"
+         "D D";
+         
+    }
+    .items-2 {
+        margin-top: 0;
+        justify-self: center;
+    }
+    .items-3 {
+        justify-self: center;
+    }
+    .footer__icons {
+        justify-self: center;
+        align-self: end;
+        grid-area: D;
+    }
+    .footer__icons > li {
+        margin-block: 0;
+    }
+    .copyright {
+        margin-top: 4rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (min-width:1040px) {
+    .footer-inner {
+        padding-inline: 2rem;
+    }
+    .footer__content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "A B C D";
+    }
+    .footer__icons {
+        align-self: unset;
+    }
+    .footer__icons li {
+        margin-top: 1rem;
+    }
+    .address span{
+        width: 40ch;
+    }
+    .copyright {
+        text-align: right;
+        padding-bottom: 2rem;
+    }
+}

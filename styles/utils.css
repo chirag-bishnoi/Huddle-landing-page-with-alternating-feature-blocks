@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.btn-pink {
+    background-color: var(--clr-pink);
+    color: var(--clr-white);
+    font-weight: 700;
+    border-radius: 50px;
+
+}
+.btn-pink:hover {
+    background-color: hsla(322, 100%, 66%, 0.8);
+}
+.btn-pink:active {
+    background-color: hsla(322, 100%, 66%, 0.7);
+}
+
+@media (min-width:750px) {
+    .container {
+        padding-inline: 1.5rem;
+    }
+}
+@media (min-width:1040px) {
+    .container {
+        padding-inline: 2rem;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        padding-inline: 3rem;
+    }
+}
+@media (min-width:1440px) {
+    .container {
+        padding-inline: 4rem;
+    }
+}
